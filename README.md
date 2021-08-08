@@ -184,7 +184,9 @@ output 8.
 	Production and Development departments hold almost 50% of the employee to be retired (47.6 %), comparing to finance and customer services
 	that hold alomst 10%.
 	Looking at the gender division for the employees to be retired soon, it is around 60% (59.9%) Male and 40% Female (40.1%) 
-	
+	Looking at Output 6, we can see that there are around 1549 employees who are eligible for the mentorship program. The majority of those
+	are also in the Production and Development departments, nearly 71% (70.9%)
+	Comparing the mentorship program eligibility to how many employees that are about to retire, it is a low number, less than 1 %.
 
 	
 
