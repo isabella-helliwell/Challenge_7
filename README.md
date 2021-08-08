@@ -10,4 +10,14 @@
        - Given Files : department.csv, dept_csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
        - Output Files : retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentor_candidates.csv, mentorship_eligibility.csv
        
-      
+## 3. Analysis
+### 3.1 The number of retiring employess by title
+        Given csv files are populated with information about the employers, such as:
+        -- employement number (emp_no)
+        -- first name (first_name)
+        -- last name (last_name)
+        -- birthday (birth_date)
+
+            
+                  
+
