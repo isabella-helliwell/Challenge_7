@@ -76,7 +76,7 @@ Output 3.
       recent employee title is shown:
       
       SELECT employees.emp_no, employees.first_name, employees.last_name,employees.birth_date,
-	titles.title, dept_emp.from_date, dept_emp.to_date
+      titles.title, dept_emp.from_date, dept_emp.to_date
       INTO mentor_candidates   
       FROM employees
       LEFT JOIN dept_emp
@@ -91,6 +91,22 @@ Output 4.
 ![image](https://user-images.githubusercontent.com/85843030/128636630-d49d7b04-0caa-404e-bce6-78aceb9d57f2.png)
 
       
+     Finally we create a final table, where the duplicate emp_no's will be removed and the most recent title is shown:
+     
+     	SELECT DISTINCT ON (emp_no) emp_no,
+	first_name,
+	last_name,
+	birth_date,
+	from_date,
+	to_date,
+	title
+	INTO mentorship_eligibilty
+	FROM mentor_candidates
+	ORDER BY emp_no, title Asc;
+     
+     
+Output 5. 
+![image](https://user-images.githubusercontent.com/85843030/128636751-e1f62178-c18b-4f79-b2a6-1720e61159e1.png)
 
 
 
