@@ -124,6 +124,18 @@ Output 6.
 ![image](https://user-images.githubusercontent.com/85843030/128640005-1e260751-1af2-4e91-b365-4c1eb91566bd.png)
 
 
+	We can also see the how many of the soon to be retired personnel are male and female by this sql query:
+	SELECT COUNT (u.gender), u.gender
+	INTO retiring_count_gender
+	FROM unique_titles_gender AS u
+	GROUP BY u.gender 
+	ORDER BY COUNT DESC;
+	
+Output 7.
+![image](https://user-images.githubusercontent.com/85843030/128640652-574cc594-2290-4bf6-af27-3846f820d9ad.png)
+
+
+
 
 
 # 4. Summary
