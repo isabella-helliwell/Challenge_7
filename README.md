@@ -39,7 +39,20 @@
         ORDER BY employees.emp_no;
         SELECT * FROM retirement_titles
  
- Output 1. ![image](https://user-images.githubusercontent.com/85843030/128634656-ce7f75f5-87c7-406b-84dd-18611eada623.png)
+ Output 1. 
+ ![image](https://user-images.githubusercontent.com/85843030/128634656-ce7f75f5-87c7-406b-84dd-18611eada623.png)
 
-                  
+        
+       Since there are duplicates, as seen in Output 1, we remove them and order the table by emp_no and the most recent title they hold:
+       
+       SELECT DISTINCT ON (emp_no) emp_no,
+       first_name,
+       last_name,
+       title
+       INTO unique_titles
+       FROM retirement_titles
+       ORDER BY emp_no,to_date DESC;
+        
+Output 2.
+![image](https://user-images.githubusercontent.com/85843030/128635591-8bdd5660-ba82-46c0-a6db-0f4c3fa5afe6.png)
 
