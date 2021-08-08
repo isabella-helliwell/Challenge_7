@@ -109,8 +109,13 @@ Output 5.
 ![image](https://user-images.githubusercontent.com/85843030/128636751-e1f62178-c18b-4f79-b2a6-1720e61159e1.png)
 
 
+## 4. Results
+	- There are in total 90398 people due to retire
+	- The majority of them hold an senior title within the company
+	- under 1% of those about to retire are managers
+	- over 60% of those retiring hold a senior position
 
-### 3.3 Additional Analysis and summary
+## 5. Additional Analysis
 	It would be interesting to see how many of the employees are eligible for mentorship program with the following sql query:
 	
 	SELECT COUNT (title), title
@@ -173,15 +178,13 @@ output 8.
 ![image](https://user-images.githubusercontent.com/85843030/128644304-74d68a03-104d-4250-96a1-7f22d6363a41.png)
 
 
-# 4. Summary
-	In summary, one can see from Output 2, that there are in total 90398 people due to retire.
-	From the above, 
+## 6. Summary
+	To summarize the analysis, one can see from Output 8., that the 3 main departments that have got the most employees to retire are
+	development, Production, and Sales.
+	Production and Development departments hold almost 50% of the employee to be retired (47.6 %), comparing to finance and customer services
+	that hold alomst 10%.
+	Looking at the gender division for the employees to be retired soon, it is around 60% (59.9%) Male and 40% Female (40.1%) 
+	
 
-
-# 5. Results
-	- There are in total 90398 people due to retire
-	- The majority of them hold an senior title within the company
-	- under 1% of those about to retire are managers
-	- over 60% of those retiring hold a senior position which is a good rate for mentoring the next generation
 	
 
