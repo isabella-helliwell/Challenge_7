@@ -109,10 +109,32 @@ Output 5.
 ![image](https://user-images.githubusercontent.com/85843030/128636751-e1f62178-c18b-4f79-b2a6-1720e61159e1.png)
 
 
-# 4. Results
+
+### 3.3 Additional Analysis
+	It would be interesting to see how many of the employees are eligible for mentorship program with the following sql query:
+	
+	SELECT COUNT (title), title
+	INTO mentorship_eligible_titles
+	FROM mentorship_eligibilty
+	GROUP BY title 
+	ORDER BY COUNT DESC;
+
+
+Output 6.
+![image](https://user-images.githubusercontent.com/85843030/128640005-1e260751-1af2-4e91-b365-4c1eb91566bd.png)
+
+
+
+
+# 4. Summary
+	In summary, one can see from Output 2, that there are in total 90398 people due to retire.
+	From the above, 
+
+
+# 5. Results
 	- There are in total 90398 people due to retire
 	- The majority of them hold an senior title within the company
 	- under 1% of those about to retire are managers
-	- over 60% of those retiring hold a senior position
+	- over 60% of those retiring hold a senior position which is a good rate for mentoring the next generation
 	
 
