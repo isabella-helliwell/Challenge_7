@@ -68,7 +68,29 @@ Output 2.
 Output 3.
 ![image](https://user-images.githubusercontent.com/85843030/128635818-74821d31-8dcd-4953-a4cb-50beb774e458.png)
 
+### 3.2 Create a Mentorship Eligibility table
+      For deliverable 2, we need to create a mentorship eligibility table, that holds the current employees who are born between
+      January 1st, 1965 and December 31, 1965.
+      We need to join 3 tables from the original files received to obtain emp_no, first_name, last_name, birth_date, from_date, to_date, and title
+      for the employees that meet the age criteria. We also need to make sure that any dublicate employee numbers are deleted and that the most
+      recent employee title is shown:
+      
+      SELECT employees.emp_no, employees.first_name, employees.last_name,employees.birth_date,
+	titles.title, dept_emp.from_date, dept_emp.to_date
+      INTO mentor_candidates   
+      FROM employees
+      LEFT JOIN dept_emp
+      ON (employees.emp_no=dept_emp.emp_no)
+      INNER JOIN titles
+      ON(employees.emp_no=titles.emp_no)
+      WHERE(employees.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+      AND (dept_emp.to_date='9999-01-01')
+      
+      
+Output 4.
+![image](https://user-images.githubusercontent.com/85843030/128636630-d49d7b04-0caa-404e-bce6-78aceb9d57f2.png)
 
+      
 
 
 
