@@ -110,7 +110,7 @@ Output 5.
 
 
 
-### 3.3 Additional Analysis
+### 3.3 Additional Analysis and summary
 	It would be interesting to see how many of the employees are eligible for mentorship program with the following sql query:
 	
 	SELECT COUNT (title), title
