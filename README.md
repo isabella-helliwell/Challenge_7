@@ -109,4 +109,10 @@ Output 5.
 ![image](https://user-images.githubusercontent.com/85843030/128636751-e1f62178-c18b-4f79-b2a6-1720e61159e1.png)
 
 
+# 4. Results
+	- There are in total 90398 people due to retire
+	- The majority of them hold an senior title within the company
+	- under 1% of those about to retire are managers
+	- over 60% of those retiring hold a senior position
+	
 
