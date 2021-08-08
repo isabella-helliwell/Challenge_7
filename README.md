@@ -56,3 +56,19 @@
 Output 2.
 ![image](https://user-images.githubusercontent.com/85843030/128635591-8bdd5660-ba82-46c0-a6db-0f4c3fa5afe6.png)
 
+
+      Create a retiring titles table to see how many employers are retiring:
+      
+      SELECT COUNT (title), title
+      INTO retiring_titles
+      FROM unique_titles
+      GROUP BY title 
+      ORDER BY COUNT DESC
+      
+Output 3.
+![image](https://user-images.githubusercontent.com/85843030/128635818-74821d31-8dcd-4953-a4cb-50beb774e458.png)
+
+
+
+
+
