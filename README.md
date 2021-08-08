@@ -134,8 +134,43 @@ Output 6.
 Output 7.
 ![image](https://user-images.githubusercontent.com/85843030/128640652-574cc594-2290-4bf6-af27-3846f820d9ad.png)
 
+	We can also find out how many people are about to retire in each department by writing the following sql query:
+	SELECT unique_titles.emp_no, unique_titles.first_name, unique_titles.last_name,
+	departments.dept_name
+	INTO retire_dep
+	FROM unique_titles
+	INNER JOIN dept_emp
+	ON (unique_titles.emp_no = dept_emp.emp_no)
+	INNER JOIN departments
+	ON(dept_emp.dept_no=departments.dept_no)
+	--WHERE(dept_emp.to_date='9999-01-01')
+	ORDER BY unique_titles.emp_no;
 
 
+	SELECT COUNT (rt_d.dept_name), rt_d.dept_name
+	INTO retire_dep_count
+	FROM retire_dep AS rt_d
+	GROUP BY rt_d.dept_name 
+	ORDER BY COUNT DESC;
+
+
+
+	SELECT DISTINCT ON (emp_no) emp_no,
+	first_name,
+	last_name,
+	dept_name
+	INTO retire_dep_unique
+	FROM retire_dep 
+	ORDER BY emp_no, dept_name DESC;
+
+	SELECT COUNT (rt_d.dept_name), rt_d.dept_name
+	INTO retire_count_departments
+	FROM  retire_dep_unique AS rt_d
+	GROUP BY rt_d.dept_name 
+	ORDER BY COUNT DESC;
+
+output 8.
+![image](https://user-images.githubusercontent.com/85843030/128644304-74d68a03-104d-4250-96a1-7f22d6363a41.png)
 
 
 # 4. Summary
