@@ -12,12 +12,34 @@
        
 ## 3. Analysis
 ### 3.1 The number of retiring employess by title
-        Given csv files are populated with information about the employers, such as:
+        The given csv files are populated with information about the employers. These informations are stored in the csv file in various
+        tables, and the contents in the tables are shown below. The names within the brackets are the names used in tables. Note that
+        the table content vary with some of the information shown below.
         -- employement number (emp_no)
         -- first name (first_name)
         -- last name (last_name)
         -- birthday (birth_date)
+        -- department number (dept_no)
+        -- department name (dept_name)
+        -- salary (salary)
+        -- employee title (title)
+        -- gender (gender)
+        -- date for starting employement/or date for starting new position within the company (from_date)
+        -- date for finnishing employement/and/or changing job title within company (to_date)
+        
+        The first step is to gather all the employees that are born between 1952-1955 in a table and call the table "retirement_titles"
+        
+        SELECT employees.emp_no, employees.first_name, employees.last_name,
+        titles.title, titles.from_date, titles.to_date
+        INTO retirement_titles
+        FROM employees
+        INNER JOIN titles
+        ON (employees.emp_no=titles.emp_no)
+        WHERE (employees.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+        ORDER BY employees.emp_no;
+        SELECT * FROM retirement_titles
+ 
+ Output 1. ![image](https://user-images.githubusercontent.com/85843030/128634656-ce7f75f5-87c7-406b-84dd-18611eada623.png)
 
-            
                   
 
