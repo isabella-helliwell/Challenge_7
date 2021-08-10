@@ -8,8 +8,9 @@
        - Data source: Employee_Challenge_starter_code.sql
        - Software: PostgreSQL v11.12, pgAdmin 4
        - Given Files : department.csv, dept_csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
-       - Output Files : retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentor_candidates.csv, mentorship_eligibility.csv,
-                        retire_dep_unique.csv, retire_count_departments   
+       - Output Files : retirement_titles.csv, unique_titles.csv, retiring_titles.csv, mentor_candidates.csv, mentor_eligibility.csv,
+                        retire_dep_unique.csv, retire_count_departments, mentorship_eligible_titles.csv, retire_dep.csv,
+			retirement_titles_gender.csv, retiring_count_gender.csv, unique_titles_gender.csv 
        
 ## 3. Analysis
 ### 3.1 The number of retiring employess by title
